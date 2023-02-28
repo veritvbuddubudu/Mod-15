@@ -39,8 +39,7 @@ class ItemCell: UITableViewCell {
     }()
     
     private lazy var separatorLine: UIImageView = {
-        let image = UIImageView(image: UIImage(named: "dividerLine"))
-        return image
+        return UIImageView(image: UIImage(named: "dividerLine"))
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -98,7 +97,6 @@ class ItemCell: UITableViewCell {
             make.leading.equalTo(image.snp.trailing).offset(16)
             make.trailing.equalTo(contentView.snp.trailing).offset(-16)
             make.top.equalTo(labelHeader.snp.bottom).offset(8)
-            
         }
     }
     
